@@ -13,6 +13,22 @@ body {
   color: #444444;
   background-color: #222;
 }
+body .modal-open{
+  overflow: hidden;
+}
+
+.modal-dialog,
+.modal-content {
+    /* 80% of window height */
+    height: 100%;
+    z-index: 99;
+    overflow: hidden !important;
+}
+
+.modal-body {
+    /* 100% = dialog height, 120px = header + footer */
+    max-height: calc(100% - 120px);
+}
 
 a {
   color: #ffc451;
@@ -557,6 +573,7 @@ section {
   font-size: 20px;
   font-weight: 700;
   margin: 5px 0 10px 60px;
+  color: #000;
 }
 .features .icon-box i {
   font-size: 48px;
@@ -565,7 +582,7 @@ section {
 }
 .features .icon-box p {
   font-size: 15px;
-  color: #848484;
+  color: #fff;
   margin-left: 60px;
 }
 .features .image {
@@ -680,7 +697,7 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: #fff;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   border-radius: 3px;
@@ -829,10 +846,11 @@ section {
 .counts .content h3 {
   font-weight: 700;
   font-size: 34px;
-  color: #151515;
+  color: #000;
 }
 .counts .content p {
   margin-bottom: 0;
+  color: #fff;
 }
 .counts .content .count-box {
   padding: 20px 0;
@@ -849,7 +867,7 @@ section {
   line-height: 30px;
   display: block;
   font-weight: 700;
-  color: #151515;
+  color: #000;
   margin-left: 50px;
 }
 .counts .content .count-box p {
@@ -857,7 +875,7 @@ section {
   margin: 0 0 0 50px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #3b3b3b;
+  color: #fff;
 }
 .counts .content .count-box a {
   font-weight: 600;
@@ -1081,13 +1099,13 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #151515;
+  color: #000;
 }
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #484848;
+  color: #fff;
 }
 .contact .info .email, .contact .info .phone {
   margin-top: 40px;

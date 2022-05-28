@@ -20,7 +20,7 @@ body .modal-open{
 .modal-dialog,
 .modal-content {
     /* 80% of window height */
-    height: 100%;
+    height: 80%;
     z-index: 99;
     overflow: hidden !important;
 }

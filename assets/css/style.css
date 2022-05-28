@@ -13,22 +13,7 @@ body {
   color: #444444;
   background-color: #222;
 }
-body .modal-open{
-  overflow: hidden;
-}
 
-.modal-dialog,
-.modal-content {
-    /* 80% of window height */
-    height: 80%;
-    z-index: 99;
-    overflow: hidden !important;
-}
-
-.modal-body {
-    /* 100% = dialog height, 120px = header + footer */
-    max-height: calc(100% - 120px);
-}
 
 a {
   color: #ffc451;

@@ -25,6 +25,11 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -41,7 +46,7 @@
 </head>
 
 <body>
-
+  
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
@@ -88,6 +93,46 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center justify-content-center">
+
+    <!-- modal -->
+  <div class="modal fade" id="sizeChart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Size Chart</h5>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+    
+            <div class="row ">
+              <span>SHORT SLEVE COTTON COMBED 30s</span>
+              <div class="col-md-4 border text-center">UKURAN</div>
+              <div class="col-md-4 border text-center">PANJANG (cm)</div>
+              <div class="col-md-4 border text-center">LEBAR (cm)</div>
+              <div class="col-md-4 border">S</div>
+              <div class="col-md-4 border text-center">45</div>
+              <div class="col-md-4 border text-center">67</div>
+              <div class="col-md-4 border">M</div>
+              <div class="col-md-4 border text-center">48</div>
+              <div class="col-md-4 border text-center">69</div>
+              <div class="col-md-4 border">L</div>
+              <div class="col-md-4 border text-center">50</div>
+              <div class="col-md-4 border text-center">72-md-4</div>
+              <div class="col-md-4 border">XL</div>
+              <div class="col-md-4 border text-center">53</div>
+              <div class="col-md-4 border text-center">74</div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of modal -->
+
     <div class="container" data-aos="fade-up">
 
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
@@ -98,31 +143,31 @@
       </div>
 
       <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-        <div class="col-xl-2 col-md-4">
+        <div class="col-xl-2 col-md-2">
           <div class="icon-box">
             <i class="ri-store-line"></i>
             <h3><a href="https://shopee.co.id/creativeksi">Shopee</a></h3>
           </div>
         </div>
-        <div class="col-xl-2 col-md-4">
+        <div class="col-xl-2 col-md-2">
           <div class="icon-box">
             <i class='bx bxs-book-content'></i>
             <h3><a href="">Artikel</a></h3>
           </div>
         </div>
-        <div class="col-xl-2 col-md-4">
+        <div class="col-xl-2 col-md-2">
           <div class="icon-box">
             <i class="ri-calendar-todo-line"></i>
             <h3><a href="">Cara Order</a></h3>
           </div>
         </div>
-        <div class="col-xl-2 col-md-4">
+        <div class="col-xl-2 col-md-2" >
           <div class="icon-box">
             <i class='bx bx-ruler'></i>
-            <h3><a href="">Size Chart</a></h3>
+            <h3><a href="" data-toggle="modal" data-target="#sizeChart">Size Chart</a></h3>
           </div>
         </div>
-        <div class="col-xl-2 col-md-4">
+        <div class="col-xl-2 col-md-2">
           <div class="icon-box">
             <i class='bx bx-dollar-circle'></i>
             <h3><a href="">Daftar Harga</a></h3>
